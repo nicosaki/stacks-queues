@@ -2,7 +2,7 @@ require './Stack.rb'
 require './Queue.rb'
 
 class BadEmployer
-  attr_accessor :queue, :employees
+  attr_reader :queue, :employees
   def initialize
     # candidates = (0..9).to_a
     @employees = Stack.new()
